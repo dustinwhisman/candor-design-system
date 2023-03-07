@@ -1,0 +1,7 @@
+:root {
+  /* layouts */
+  --lyt-center-gutters: 2rem;
+  --lyt-center-max-width: 60rem;
+  --lyt-sidebar-gap: 1rem;
+  --lyt-sidebar-min-content-width: 70%;
+}
