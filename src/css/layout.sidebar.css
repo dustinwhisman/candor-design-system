@@ -1,0 +1,15 @@
+.lyt-sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.lyt-sidebar > :first-child {
+  flex-grow: 1;
+}
+
+.lyt-sidebar > :last-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-inline-size: 50%;
+}
