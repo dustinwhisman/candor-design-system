@@ -1,6 +1,6 @@
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ 'src/public': '/' });
-  eleventyConfig.addLayoutAlias('default', 'layout.njk');
+  eleventyConfig.addLayoutAlias('default', 'layouts/default.njk');
 
   return {
     dir: {

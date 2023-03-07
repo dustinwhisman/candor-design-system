@@ -1,0 +1,4 @@
+.lyt-center {
+  width: min(100vw - var(--lyt-center-gutters), var(--lyt-center-max-width));
+  margin-inline: auto;
+}

@@ -23,10 +23,8 @@
     <link rel="stylesheet" href="/styles.css">
   </head>
   <body>
-    {% block header %}
-      {% include 'partials/header.njk' %}
-    {% endblock %}
-    <main id="main-content">
+    {% block header %}{% endblock %}
+    <main class="lyt-center">
       {% block content %}
         {{ content | safe }}
       {% endblock %}

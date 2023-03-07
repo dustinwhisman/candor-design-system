@@ -1,0 +1,10 @@
+---
+layout: layouts/app-shell.njk
+---
+
+<div class="lyt-sidebar">
+  {% include 'partials/sidebar-navigation.njk' %}
+  <div   id="main-content">
+    {{ content | safe }}
+  </div>
+</div>
