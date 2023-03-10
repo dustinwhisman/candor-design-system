@@ -1,7 +1,7 @@
 code {
   font-family: var(--mono);
-  font-size: 85%;
+  font-size: var(--code-font-size);
   background-color: var(--terminal);
-  padding-inline: 0.25ch;
-  border-radius: 0.25em;
+  padding-inline: var(--code-padding-inline);
+  border-radius: var(--default-border-radius);
 }

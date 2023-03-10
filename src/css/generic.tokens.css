@@ -16,12 +16,95 @@
     'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
+  /* modular scale */
+  --ratio: 1.2;
+  --s0: 1;
+  --s1: (var(--s0) * var(--ratio));
+  --s2: (var(--s1) * var(--ratio));
+  --s3: (var(--s2) * var(--ratio));
+  --s4: (var(--s3) * var(--ratio));
+  --s5: (var(--s4) * var(--ratio));
+  --s6: (var(--s5) * var(--ratio));
+  --s-1: (var(--s0) / var(--ratio));
+  --s-2: (var(--s-1) / var(--ratio));
+  --s-3: (var(--s-2) / var(--ratio));
+  --s-4: (var(--s-3) / var(--ratio));
+  --s-5: (var(--s-4) / var(--ratio));
+  --s-6: (var(--s-5) / var(--ratio));
+  --s-7: (var(--s-6) / var(--ratio));
+  --size-s0: clamp(
+    var(--s0) * 1rem,
+    (var(--s-1) * 1rem) + (var(--s-2) * 1cqw),
+    var(--s1) * 1rem
+  );
+  --size-s1: clamp(
+    var(--s1) * 1rem,
+    (var(--s0) * 1rem) + (var(--s-1) * 1cqw),
+    var(--s2) * 1rem
+  );
+  --size-s2: clamp(
+    var(--s2) * 1rem,
+    (var(--s1) * 1rem) + (var(--s0) * 1cqw),
+    var(--s3) * 1rem
+  );
+  --size-s3: clamp(
+    var(--s3) * 1rem,
+    (var(--s2) * 1rem) + (var(--s1) * 1cqw),
+    var(--s4) * 1rem
+  );
+  --size-s4: clamp(
+    var(--s4) * 1rem,
+    (var(--s3) * 1rem) + (var(--s2) * 1cqw),
+    var(--s5) * 1rem
+  );
+  --size-s5: clamp(
+    var(--s5) * 1rem,
+    (var(--s4) * 1rem) + (var(--s3) * 1cqw),
+    var(--s6) * 1rem
+  );
+  --size-s-1: clamp(
+    var(--s-1) * 1rem,
+    (var(--s-2) * 1rem) + (var(--s-3) * 1cqw),
+    var(--s0) * 1rem
+  );
+  --size-s-2: clamp(
+    var(--s-2) * 1rem,
+    (var(--s-3) * 1rem) + (var(--s-4) * 1cqw),
+    var(--s-1) * 1rem
+  );
+  --size-s-3: clamp(
+    var(--s-3) * 1rem,
+    (var(--s-4) * 1rem) + (var(--s-5) * 1cqw),
+    var(--s-2) * 1rem
+  );
+  --size-s-4: clamp(
+    var(--s-4) * 1rem,
+    (var(--s-5) * 1rem) + (var(--s-6) * 1cqw),
+    var(--s-3) * 1rem
+  );
+  --size-s-5: clamp(
+    var(--s-5) * 1rem,
+    (var(--s-6) * 1rem) + (var(--s-7) * 1cqw),
+    var(--s-4) * 1rem
+  );
+
+  /* typography */
+  --code-font-size: 85%;
+  --code-padding-inline: 0.25ch;
+  --pre-font-size: var(--size-s0);
+
+  /* spacing */
+  --pre-padding: var(--size-s0);
+
+  /* borders */
+  --default-border-radius: 0.25rem;
+
   /* layouts */
   --lyt-center-gutters: 2rem;
   --lyt-center-max-width: 60rem;
-  --lyt-sidebar-gap: 1rem;
+  --lyt-sidebar-gap: var(--size-s2);
   --lyt-sidebar-min-content-width: 70%;
-  --lyt-stack-gap: 1rem;
+  --lyt-stack-gap: var(--size-s0);
 }
 
 @media (prefers-color-scheme: dark) {
