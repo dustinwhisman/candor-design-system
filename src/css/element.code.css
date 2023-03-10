@@ -1,0 +1,7 @@
+code {
+  font-family: var(--mono);
+  font-size: var(--code-font-size);
+  background-color: var(--terminal);
+  padding-inline: var(--code-padding-inline);
+  border-radius: var(--default-border-radius);
+}
