@@ -1,0 +1,9 @@
+pre {
+  font-family: var(--mono);
+  font-size: 1rem;
+  background-color: var(--terminal);
+  padding: 2rem;
+  border-radius: 0.25rem;
+  white-space: pre;
+  overflow-x: auto;
+}
